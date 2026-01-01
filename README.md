@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# Prime Trade Task Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack task management dashboard built as part of the Prime Trade AI assignment.
 
-## Available Scripts
+## Features
+- User registration and login
+- JWT-based authentication
+- Protected routes
+- Task management with full CRUD operations
+- Mark tasks as completed
+- Secure backend APIs
+- Responsive UI built with Tailwind CSS
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+### Frontend
+- React (Create React App)
+- Tailwind CSS
+- Fetch API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
+# Prime Trade Task Dashboard
 
-### `npm test`
+A full-stack task management dashboard built as part of the Prime Trade AI assignment.  
+The application includes secure authentication, protected routes, and full CRUD functionality for managing tasks.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- User registration and login
+- JWT-based authentication
+- Protected routes
+- Task management with full CRUD operations
+  - Create tasks
+  - View tasks
+  - Update task status
+  - Delete tasks
+- Tasks are user-specific
+- Authentication persists on page refresh
+- Clean and responsive UI built with Tailwind CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+### Frontend
+- React (Create React App)
+- Tailwind CSS
+- JavaScript
+- Fetch API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT (JSON Web Token)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
+prime-trade-dashboard/
+├── client/ # React frontend
+├── server/ # Node.js backend
+└── README.md
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
+- Node.js (v16 or above recommended)
+- npm
+- MongoDB Atlas account
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Backend Setup
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Prerequisites
+- Node.js (v16 or above recommended)
+- npm
+- MongoDB Atlas account
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Backend Setup
+cd server
+npm install
+npm run dev
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Frontend Setup
+cd client
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+## API Testing
+
+- All backend APIs were tested using **Postman**
+- Protected routes require a valid JWT token in the Authorization header
+
+Example:Authorization: Bearer <your_token>
+
+
+---
+
+## Notes
+
+- MongoDB Atlas is used as the database
+- Environment variables are excluded from version control
+- Default React branding has been removed
+- Custom favicon is used for the application
+
+---
+
+## Author
+
+Mithun S
+
+
+
