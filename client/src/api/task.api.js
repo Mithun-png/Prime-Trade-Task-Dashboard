@@ -1,6 +1,4 @@
-const API_URL = process.env.REACT_APP_API_URL 
-  ? `${process.env.REACT_APP_API_URL}/api/tasks` 
-  : "https://prime-trade-task-dashboard.onrender.com/api/tasks";
+const API_URL = "https://prime-trade-task-dashboard.onrender.com/api/tasks";
 
 export const getTasks = async () => {
   const token = localStorage.getItem("token");
@@ -31,8 +29,7 @@ export const createTask = async (title) => {
 
 export const updateTask = async (id, updates) => {
   const token = localStorage.getItem("token");
-
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`, {
+  const res = await fetch(`https://prime-trade-task-dashboard.onrender.com/api/tasks/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -40,19 +37,16 @@ export const updateTask = async (id, updates) => {
     },
     body: JSON.stringify(updates),
   });
-
   return res.json();
 };
 
 export const deleteTask = async (id) => {
   const token = localStorage.getItem("token");
-
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`, {
+  const res = await fetch(`https://prime-trade-task-dashboard.onrender.com/api/tasks/${id}`, {
     method: "DELETE",
     headers: {
       Authorization: `Bearer ${token}`,
     },
   });
-
   return res.json();
 };
