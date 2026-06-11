@@ -1,4 +1,6 @@
-const API_URL = `${process.env.REACT_APP_API_URL}/api/tasks`;
+const API_URL = process.env.REACT_APP_API_URL 
+  ? `${process.env.REACT_APP_API_URL}/api/tasks` 
+  : "https://prime-trade-task-dashboard.onrender.com/api/tasks";
 
 export const getTasks = async () => {
   const token = localStorage.getItem("token");
